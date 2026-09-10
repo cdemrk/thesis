@@ -1,4 +1,4 @@
-# Despoina Christina Markatou - Diploma Thesis, NTUA
+## Despoina Christina Markatou - Diploma Thesis, NTUA
 
 # Efficient AI Workload Orchestration in Edge-Cloud Infrastructure using DRL
 
