@@ -25,29 +25,22 @@ The framework dynamically calculates computation and communication delays to sel
 ## 📂 Repository Structure
 
 ```text
-├── src/                      # Core system implementation
+├── src/                     
 │   ├── environment.py        # Edge-Cloud infrastructure simulator
 │   ├── dqn_agent.py          # Deep Q-Network agent architecture
 │   └── preprocessing.py      # Profile generation and Top-K masking
-├── data/                     # Synthetically generated workload JSONs
-│   ├── small
-|   |  ├──dataset_1_abundance.json
-|   |  ├──dataset_1_abundance.json
-|   |  ├──dataset_1_abundance.json
-|   |  └──dataset_1_abundance.json
-│   └── big
-|      ├──dataset_1_abundance.json
-|      ├──dataset_1_abundance.json
-|      ├──dataset_1_abundance.json
-|      └──dataset_1_abundance.json
+├── data/                     
+│   ├── small                 # Synthetically generated datasets of small infrastructure
+│   └── big                   # Synthetically generated datasets of big infrastructure
 ├── milp/
 |   └── milp.py               # MILP global optimal mathematical model
-├── scripts/                  # Execution scripts separated by phase
+├── scripts/                  
 │   ├── data_generation/      # Scripts to generate Poisson-distributed traffic
-│   ├── training/             # DQN training, reward ablation, pruning training
-│   ├── evaluation/           # Inference scripts for DQN, Greedy, and MILP
-│   └── visualization/        # Python scripts for plotting metrics (matplotlib)
-└── results/                  # Generated plots and metric evaluation grids
+│   ├── training/             # DQN training, weightreward ablation, pruning training
+│   ├── evaluation/           # Evaluation scripts for DQN, Greedy and MILP methodologies
+│   └── visualization/        # Python scripts for plots
+└── results/                  
+    └── diagrams/             # Generated plots and metric evaluation grids
 ```
 
 ## 🚀 Getting Started
