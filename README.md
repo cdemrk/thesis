@@ -1,6 +1,6 @@
-## Diploma Thesis, NTUA
-
 # Efficient AI Workload Orchestration in Edge-Cloud Infrastructure using Deep Reinforcement Learning
+
+## Despoina Christina Markatou - Diploma Thesis, NTUA
 
 ## 📖 Overview
 This repository contains the implementation of the Diploma Thesis: **"Efficient Artificial Intelligence Workload Orchestration in Edge-Cloud Infrastructure using Deep Reinforcement Learning"**. 
