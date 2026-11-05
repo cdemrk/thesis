@@ -1,3 +1,13 @@
+import sys
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+scripts_dir = os.path.dirname(current_dir)
+root_dir = os.path.dirname(scripts_dir)
+src_dir = os.path.join(root_dir, 'src')
+
+sys.path.append(src_dir)
+
 import json
 import torch
 import numpy as np

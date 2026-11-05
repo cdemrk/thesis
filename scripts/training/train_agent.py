@@ -1,3 +1,13 @@
+import sys
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+scripts_dir = os.path.dirname(current_dir)
+root_dir = os.path.dirname(scripts_dir)
+src_dir = os.path.join(root_dir, 'src')
+
+sys.path.append(src_dir)
+
 import json
 import torch
 import numpy as np
@@ -89,8 +99,9 @@ def train_drl_orchestrator(dataset_path, episodes=500, w_cost=0.5, w_idle=0.5, s
 
 if __name__ == "__main__":
     # Παράδειγμα κλήσης αν τρέξεις απευθείας το αρχείο
+    dataset_file = os.path.join(root_dir, "datasets", "big", "dataset_3_mild_contention_big.json")
     trained_agent = train_drl_orchestrator(
-        dataset_path="dataset_3_mild_contention_big.json", 
+        dataset_path=dataset_file, 
         episodes=1500,
         w_cost=0.5,
         w_idle=0.5,
